@@ -19,7 +19,9 @@
 
 %%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{altacv}[2022/11/03 AltaCV v1.6.5, yet another alternative class for a resume/curriculum vitae.]
+%% CHANGE v.23.1.30-EN-demo:
+%% Changed name of the class according to license requirements
+\ProvidesClass{custom-altacv}[2022/11/03 AltaCV v1.6.5, yet another alternative class for a resume/curriculum vitae.]
 
 %% v1.1: Optionally load academicons
 %% v1.4: Nope, academicons is unnecessary; fontawesome5 has \faOrcid.
@@ -79,9 +81,19 @@
   \RequirePackage[newcommands]{ragged2e}
 \fi
 
+%% CHANGE v.23.1.30-EN-demo:
+%% New colors for hyperlinks and unicode support
 \if@withhyper
   \AtBeginDocument{%
-    \hypersetup{hidelinks}
+    \hypersetup{
+			hidelinks=true,
+			unicode=true,
+    		colorlinks=true,
+    		linkcolor=red,				% internal links
+    		citecolor=green,		 	% bibliography
+    		filecolor=magenta,     		% files
+    		urlcolor=blue               % URL
+    	}
     \urlstyle{same}
   }
 \fi
@@ -188,6 +200,8 @@
 }
 \ExplSyntaxOff
 
+%% CHANGE v.23.1.30-EN-demo:
+%% New Info field 'telegram'
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
@@ -195,6 +209,7 @@
 \NewInfoField{mailaddress}{\faEnvelope}
 \NewInfoField{phone}{\faPhone}[tel:]
 \NewInfoField{homepage}{\faGlobe}[https://]
+\NewInfoField{telegram}{\faPaperPlane}[https://t.me/]
 \NewInfoField{twitter}{\faTwitter}[https://twitter.com/]
 \NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/]
 \NewInfoField{github}{\faGithub}[https://github.com/]

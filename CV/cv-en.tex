@@ -1,0 +1,168 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{custom-altacv}
+
+% Specify the CV version according to format: v.YY.MM.DD-L.S
+% where <L> is language (RU, EN, etc.) and <S> is a special mark like 'demo'.
+\newcommand{\cvversion}{v.23.1.30-EN-demo}
+\input{preamble.tex}
+
+
+\begin{document}
+
+\name{Artyom Fartygin}
+\tagline{Software Engineer}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{fartygin.a@phystech.edu}
+  \phone{+7 963 061 20 44}
+  \telegram{temikfart}
+  \github{temikfart}
+  \printinfo{\faLinkedin}{LinkedIn}[https://linkedin.com/in/artyom-fartygin-61890024a]
+  \location{Russia, Dolgoprudny}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically break across pages
+% if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Assistant Engineer \cvtag{C++}}{Huawei -- System Engineering Lab}{Summer Internship 2022}{}
+
+\begin{itemize}
+	\item Developed \textbf{3} detectors of inefficient code (\textbf{Static Analysis}). Two of them analyze \textbf{LLVM IR} and look for idioms (\textbf{Idiom Detection}). All the programs are used in the company.
+\end{itemize}
+
+\divider
+
+\cvevent{Backend Developer \cvtag{Ruby on Rails}}{LLC <<TeleProvodnik>>}{3 months}{}
+
+\begin{itemize}
+	\item Modernized an outdated geoportal which was developed \textbf{10} years ago. I updated the language and framework versions to modern ones, restored API services.
+\end{itemize}
+
+
+
+\cvsection{Projects}
+
+\cvevent{SQL to CypherQL Converter \cvtag{C++}}{Open-Source project -- Data Migration Tool}{February -- May 2022}{}
+
+\begin{itemize}
+	\item Microsoft SQL (Relation DBMS) queries translation into CypherQL language (Graph DBMS neo4j);
+	\item Development according to Agile (Scrum) in the team of two;
+	\item Technology stack: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
+	\item Implemented configuration and logging systems for the application, queries syntax analyzer (building AST), also, query translator.
+\end{itemize}
+
+\divider
+
+\cvevent{Coursework -- PDP-11 Emulator \cvtag{C}}{MIPT}{April -- July 2021}{}
+
+\begin{itemize}
+	\item Coursework was done according to professor's specifications;
+	\item Developed an extensive functionality: a lot of commands, processor state word, etc.
+\end{itemize}
+
+
+
+\cvsection{Certificates and diplomas}
+
+\cvevent{Participations in two international olympiads on astronomy and astrophysics}{IOAA and IAO}{}{}
+
+\cvevent{Successful course completion \cvtag{C++}}{Coursera -- <<Development basics in C++: White belt>>, \\ \hspace{5em}<<Development basics in C++: Yellow belt>>, \\ \hspace{5em}<<Agile with Atlassian Jira>>}{}{}
+
+\cvevent{Successful course completion \cvtag{Java}}{JetBrains Academy -- Java for beginners}{}{}
+
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Education}
+
+\cvevent{University Degree}{MIPT, Bachelor}{September, 2020 -- July, 2024}{}
+$3^\text{rd}$ year student at phystech-school of applied mathematics and informatics
+
+\divider
+
+\cvevent{Secondary Eduation}{LORD lyceum}{September, 2009 -- June, 2020}{}
+Graduated with honors
+
+
+
+\cvsection{Skills}
+
+\begin{itemize}
+	\item \textcolor{emphasis}{Main development languages} 
+\end{itemize}
+
+\cvtag{C++} -- \textbf{LLVM}, \textbf{STL}, \textbf{Standard} library, etc.
+\vspace{1ex}
+
+\cvtag{C} -- \textbf{Standard} and \textbf{POSIX} libraries.
+\vspace{1ex}
+
+\cvtag{Python} -- Automated Web UI-testing via Selenium WebDriver (PyTest, unittest)
+\vspace{1ex}
+
+\cvtag{Ruby} -- basic knowledge and creation of simple Web applications via \cvtag{Ruby on Rails}
+%\vspace{1ex}
+
+\cvtag{Java} -- basic knowledge
+\vspace{.5ex}
+
+\divider
+
+\begin{itemize}
+	\item \textcolor{emphasis}{Had work experience} 
+\end{itemize}
+
+\cvtag{LLVM} -- writing analysis passes for \textbf{LLVM Opt}, comprehention of most \textbf{LLVM IR} instructions
+\vspace{1ex}
+
+\cvtag{SQL} -- \cvtag{Microsoft SQL Server}
+\vspace{1ex}
+
+\cvtag{CypherQL} -- \cvtag{neo4j} (Graph DB)
+\vspace{1ex}
+
+\cvtag{CMake}\cvtag{Make} -- cross-platform compilation of files in \textbf{C} and \textbf{C++} languages
+\vspace{1ex}
+
+\cvtag{GoogleTest} -- Unit-testing (\textbf{C++})
+\vspace{1ex}
+
+\cvtag{Doxygen} -- code documentation
+\vspace{1ex}
+
+\cvtag{PDP-11 Assembly}\cvtag{Bash}\cvtag{MD}\cvtag{LaTex}
+\vspace{1ex}
+
+\divider
+
+\begin{itemize}
+	\item\textcolor{emphasis}{Tools and approaches}
+\end{itemize}
+
+\cvtag{GitHub}\cvtag{GitLab}\cvtag{Jira}\cvtag{Agile}\cvtag{git-flow}
+
+
+
+\cvsection{Languages}
+
+\begin{itemize}
+	\item English --- \cvtag{Pre-Intermediate}
+\end{itemize}
+
+\end{paracol}
+
+\end{document}
