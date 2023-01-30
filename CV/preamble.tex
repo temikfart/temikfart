@@ -46,10 +46,16 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% *.bib contains your publications
-%\addbibresource{cv-en.bib}
-
+% Version watermark in the corner
 \usepackage[angle=0, fontsize=0.015\paperwidth, text=\cvversion, hpos=0.99\paperwidth, vpos=0.01\paperwidth, anchor=rt]{draftwatermark}
 
 % Text inside mathmode
 \usepackage{amsmath}
+
+% Huawei logo
+\newcommand*\huawei{\raisebox{-0.15\totalheight}{\includegraphics[width=15pt]{images/huawei}}\hspace{.5ex}}
+% MIPT logo (EN)
+\newcommand*\mipten{\raisebox{-0.15\totalheight}{\includegraphics[width=40pt]{images/mipt-en}}\hspace{.5ex}}
+
+% Add wrapfigures
+\usepackage{wrapfig}
