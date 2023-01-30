@@ -68,7 +68,10 @@
   %% copy-paste as normal characters
   \RequirePackage{cmap}
   \RequirePackage[utf8]{inputenc}
+  %% CHANGE v.23.1.31-RU-demo:
+  %% Changed encoding T1 --> T2A and added package babel for russian language support
   \RequirePackage[T1]{fontenc}
+  \RequirePackage[english, russian]{babel}
   \input{glyphtounicode}
   \pdfglyphtounicode{f_f}{FB00}
   \pdfglyphtounicode{f_f_i}{FB03}

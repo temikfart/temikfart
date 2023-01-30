@@ -1,0 +1,170 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{custom-altacv}
+
+% Specify the CV version according to format: v.YY.MM.DD-L.S
+% where <L> is language (RU, EN, etc.) and <S> is a special mark like 'demo'.
+\newcommand{\cvversion}{v.23.1.31-RU-demo}
+\input{preamble.tex}
+
+
+\begin{document}
+
+\name{Фартыгин Артём}
+\tagline{Software Engineer}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{fartygin.a@phystech.edu}
+  \phone{+7 963 061 20 44}
+  \telegram{temikfart}
+  \github{temikfart}
+  \printinfo{\faLinkedin}{LinkedIn}[https://linkedin.com/in/artyom-fartygin-61890024a]
+  \location{Россия, Долгопрудный}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically break across pages
+% if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Опыт Работы}
+
+\cvjob{Ассистент Инженер \cvtag{C++}}{\huawei Huawei -- System Engineering Lab}{Летняя стажировка 2022}{Huawei RRI}{https://career.huawei.ru/rri/en/}
+
+\begin{itemize}
+	\item Разработал \textbf{3} детектора неэффективного кода (\textbf{Static Analysis}). Два из них анализируют \textbf{LLVM IR} для поиска идиом (\textbf{Idiom Detection}). Все программы используются в компании.
+\end{itemize}
+
+\divider
+
+\cvjob{Backend Разработчик \cvtag{Ruby on Rails}}{ООО <<ТелеПроводник>>}{3 месяца}{ТелеПроводник}{https://teleprovodnik.ru/}
+
+\begin{itemize}
+	\item Модернизировал геопортал, который начал разрабатываться \textbf{10} лет назад (устаревший). Я обновил версию языка и фреймворка до современных, восстановил работу API сервисов.
+\end{itemize}
+
+
+
+\cvsection{Проекты}
+
+\cvproject{SQL to CypherQL Converter \cvtag{C++}}{Open-Source проект -- Инструмент для миграции данных}{Февраль -- Май 2022}{sql2cypher}{https://github.com/temikfart/sql2cypher/}
+
+\begin{itemize}
+	\item Трансляция запросов Microsoft SQL (реляционная СУБД) в язык CypherQL (графовая СУБД neo4j);
+	\item Разработка по Agile (Scrum) в команде из двух человек;
+	\item Стек технологий: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
+	\item Реализовал систему конфигурации и логирования приложения, синтаксический анализ запросов (построение AST), а также переводчик запросов (Query Assembler).
+\end{itemize}
+
+\divider
+
+\cvproject{Эмулятор PDP-11 \cvtag{C}}{Курсовая работа в МФТИ}{Апрель -- Июль 2021}{pdp11-emulator}{https://github.com/temikfart/pdp11-emulator/}
+
+\begin{itemize}
+	\item Работа была сделана в соотстветсвии с техническим заданием;
+	\item Был разработан обширная функциональность: множество команд для исполнения, слова состояния процессора и т.д.
+\end{itemize}
+
+
+
+\cvsection{Сертификаты и Дипломы}
+
+\cvachievement{\faGraduationCap}{Участие в двух \textbf{международных} олимпиадах по астрономии}{IOAA и IAO}
+
+\cvachievement{\faMedal}{Успешное завершение курса \cvtag{C++}}{Coursera -- <<Основы разработки на C++: Жёлтый пояс>>}
+
+\cvachievement{\faMedal}{Успешное завершение курса \cvtag{Agile}}{Coursera -- <<Agile with Atlassian Jira>>}
+
+\cvachievement{\faMedal}{Успешное завершение курса \cvtag{Java}}{JetBrains Academy -- <<Java for beginners>>}
+
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Образование}
+
+\cvevent{\faUniversity Высшее образование}{МФТИ, Бакалавриат}{Сентябрь, 2020 -- Июль, 2024}{}
+$3^\text{ий}$ курс физтех-школы прикладной математики и информатики
+
+\divider
+
+\cvevent{\faSchool \hspace{.1ex} Среднее образование}{Лицей ЛОРД}{Сентябрь, 2009 -- Июнь, 2020}{}
+Окончил с отличием
+
+
+
+\cvsection{Навыки}
+
+\begin{itemize}
+	\item \textcolor{emphasis}{Главные языки разработки} 
+\end{itemize}
+
+\cvtag{C++} -- \textbf{LLVM}, \textbf{STL}, \textbf{Standard} library и т.д.
+\vspace{1ex}
+
+\cvtag{C} -- \textbf{Standard} и \textbf{POSIX} libraries.
+\vspace{1ex}
+
+\cvtag{Python} -- авто Web UI-тесты с помощью WebDriver (PyTest, unittest)
+\vspace{1ex}
+
+\cvtag{Ruby} -- базовые знания языка и создание простых web-приложений на \cvtag{Ruby on Rails}
+%\vspace{1ex}
+
+\cvtag{Java}\cvtag{Kotlin}\cvtag{Go} -- базовые знания
+\vspace{.5ex}
+
+\divider
+
+\begin{itemize}
+	\item \textcolor{emphasis}{Had work experience} 
+\end{itemize}
+
+\cvtag{LLVM} -- написание анализирующих pass'ов для \textbf{LLVM Opt}, знание базовых \textbf{LLVM IR} инструкций
+\vspace{1ex}
+
+\cvtag{SQL} -- \cvtag{Microsoft SQLS} (реляционная СУБД)
+\vspace{-.2ex}
+
+\cvtag{CypherQL} -- \cvtag{neo4j} (графовая СУБД)
+\vspace{1ex}
+
+\cvtag{CMake}\cvtag{Make} -- кроссплатформенная компиляция на языках \textbf{C} и \textbf{C++}
+\vspace{1ex}
+
+\cvtag{GoogleTest} -- Unit-тестирование (\textbf{C++})
+\vspace{1ex}
+
+\cvtag{Doxygen} -- документирование кода
+\vspace{1ex}
+
+\cvtag{PDP-11 Assembly}\cvtag{Bash}\cvtag{MD}\cvtag{LaTex}
+\vspace{1ex}
+
+\divider
+
+\begin{itemize}
+	\item\textcolor{emphasis}{Рабочие инструменты}
+\end{itemize}
+
+\cvtag{GitHub}\cvtag{GitLab}\cvtag{Jira}\cvtag{Agile}
+
+
+
+\cvsection{Языки}
+
+\begin{itemize}
+	\item Английский --- \cvtag{Pre-Intermediate}
+\end{itemize}
+
+\end{paracol}
+
+\end{document}
