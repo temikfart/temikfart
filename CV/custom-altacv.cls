@@ -19,7 +19,7 @@
 
 %%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-%% CHANGE v.23.1.30-EN-demo:
+%% CHANGE v.23.1.30:
 %% Changed name of the class according to license requirements
 \ProvidesClass{custom-altacv}[2022/11/03 AltaCV v1.6.5, yet another alternative class for a resume/curriculum vitae.]
 
@@ -63,12 +63,19 @@
 
 \ifxetexorluatex
   \RequirePackage{fontspec}
+  %% CHANGE v.23.1.31:
+  %% Added new package babel for word wraps
+  \ifdefined\russiansupport
+  	\RequirePackage[russian]{babel}
+  \else
+  	\RequirePackage[english]{babel}
+  \fi
 \else
   %% v1.3.2 attempts to make ligatures
   %% copy-paste as normal characters
   \RequirePackage{cmap}
   \RequirePackage[utf8]{inputenc}
-  %% CHANGE v.23.1.31-RU-demo:
+  %% CHANGE v.23.1.31:
   %% Changed encoding T1 --> T2A and added package babel for russian language support
   \RequirePackage[T1]{fontenc}
   \RequirePackage[english, russian]{babel}
@@ -84,7 +91,7 @@
   \RequirePackage[newcommands]{ragged2e}
 \fi
 
-%% CHANGE v.23.1.30-EN-demo:
+%% CHANGE v.23.1.30:
 %% New colors for hyperlinks and unicode support
 \if@withhyper
   \AtBeginDocument{%
@@ -162,7 +169,9 @@
   }{%
      \if@withhyper%
       \mbox{\textcolor{accent}{\normalfont #1}~
-      \href{#3}{\utffriendlydetokenize{#2}}\hspace{2em}}
+      %% CHANGE v.23.1.31:
+      %% Decreased hspace from 2 to 1 em
+      \href{#3}{\utffriendlydetokenize{#2}}\hspace{1em}}
      \else%
        \ClassWarning{Please specify [withhyper] option to enable hyperlinks. Printing out full hyperlink prefix #1 for now.}%
       \mbox{\textcolor{accent}{\normalfont #1}~{\utffriendlydetokenize{#3#2}}\hspace{2em}}%
@@ -203,8 +212,6 @@
 }
 \ExplSyntaxOff
 
-%% CHANGE v.23.1.30-EN-demo:
-%% New Info field 'telegram'
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
@@ -212,6 +219,8 @@
 \NewInfoField{mailaddress}{\faEnvelope}
 \NewInfoField{phone}{\faPhone}[tel:]
 \NewInfoField{homepage}{\faGlobe}[https://]
+%% CHANGE v.23.1.30:
+%% New Info field 'telegram'
 \NewInfoField{telegram}{\faPaperPlane}[https://t.me/]
 \NewInfoField{twitter}{\faTwitter}[https://twitter.com/]
 \NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/]
@@ -277,8 +286,10 @@
     {\taglinefont\color{tagline}\@tagline\par}
     \medskip
     {\personalinfofont\@personalinfo\par}
-    \end{minipage}\hfill%
-    \altacv@right@photos\par%
+    %% CHANGE v.23.1.31:
+    %% Removed photo
+    \end{minipage}%\hfill%
+    %\altacv@right@photos\par%
   \endgroup\medskip
 }
 
@@ -308,8 +319,6 @@
   \medskip\normalsize
 }
 
-% CHANGE v.23.1.30-demo:
-% New command \cvproject like \cvevent, but with link to the github
 \newcommand{\cvproject}[5]{%
 	{\large\color{emphasis}#1\par}
 	\smallskip\normalsize
@@ -317,12 +326,14 @@
 		\textbf{\color{accent}#2}\par
 		\smallskip}
 	\ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}}%
-	\ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faGithub~\href{#5}{#4}}}}\par
+	%% CHANGE v.23.1.30:
+	%% New command \cvproject like \cvevent, but with colored link to the github
+	\ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faGithub~\textcolor{url}{\underline{\href{#5}{#4}}}}}}\par
 	\medskip\normalsize
 }
 
-% CHANGE v.23.1.30-demo:
-% New command \cvjob like \cvevent, but with link to the company
+%% CHANGE v.23.1.30:
+%% New command \cvjob like \cvevent, but with colored link to the company
 \newcommand{\cvjob}[5]{%
 	{\large\color{emphasis}#1\par}
 	\smallskip\normalsize
@@ -330,7 +341,7 @@
 		\textbf{\color{accent}#2}\par
 		\smallskip}
 	\ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}}%
-	\ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faLink~\href{#5}{#4}}}}\par
+	\ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faLink~\textcolor{url}{\underline{\href{#5}{#4}}}}}}\par
 	\medskip\normalsize
 }
 

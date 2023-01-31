@@ -1,5 +1,5 @@
 PROJECT(LatexProject NONE)
-CMAKE_MINIMUM_REQUIRED(VERSION 3.11)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.12)
 
 # Find LaTex tools.
 FIND_PACKAGE(LATEX)
@@ -14,6 +14,20 @@ IF(NOT MAIN_TEX_BASE_FILENAME)
 ENDIF()
 SET(MAIN_TEX "${CMAKE_SOURCE_DIR}/${MAIN_TEX_BASE_FILENAME}.tex")
 
+# Russian language support.
+## Make lowercase.
+IF(RUSSIAN_SUPPORT)
+	STRING(TOLOWER ${RUSSIAN_SUPPORT} LANG_ARG)
+ENDIF()
+## Check language
+IF(LANG_ARG STREQUAL "ru")
+	MESSAGE(STATUS "Russian word wraps support ON")
+	SET(TEX_ARGUMENT "\"\\def\\russiansupport{}\\input{${MAIN_TEX}}\"")
+ELSE()
+	MESSAGE(STATUS "English word wraps support ON")
+	SET(TEX_ARGUMENT "${MAIN_TEX}")
+ENDIF()
+
 # The directory where the final build data will be stored.
 FILE(MAKE_DIRECTORY ${LATEX_OUTPUT_PATH})
 SET(OUT_DIRECTORY "${CMAKE_SOURCE_DIR}/${LATEX_OUTPUT_PATH}")
@@ -22,12 +36,14 @@ SET(OUT_DIRECTORY "${CMAKE_SOURCE_DIR}/${LATEX_OUTPUT_PATH}")
 SET(WORKINGDIR "${CMAKE_SOURCE_DIR}")
 
 IF(WITH_BIBLIOGRAPHY)
+	MESSAGE(STATUS "Bibliography ON")
+
 	# The name of .bcf file.
 	SET(MAIN_BCF_FILE "${MAIN_TEX_BASE_FILENAME}.bcf")
 
 	# First pass.
 	ADD_CUSTOM_TARGET(latex-prebuild
-		COMMAND ${PDFLATEX_COMPILER} -output-directory=${OUT_DIRECTORY} ${MAIN_TEX}
+		COMMAND ${LUALATEX_COMPILER} --output-directory=${OUT_DIRECTORY} ${TEX_ARGUMENT}
 		COMMENT "Starting Prebuild."
 		WORKING_DIRECTORY ${WORKINGDIR}
 		DEPENDS ${MAIN_TEX})
@@ -42,7 +58,7 @@ ENDIF()
 
 # Generate the final pdf.
 ADD_CUSTOM_TARGET(latex-pdf
-	COMMAND ${PDFLATEX_COMPILER} -output-directory=${OUT_DIRECTORY} ${MAIN_TEX}
+	COMMAND ${LUALATEX_COMPILER} --output-directory=${OUT_DIRECTORY} ${TEX_ARGUMENT}
 	COMMENT "Assembling the final pdf file."
 	WORKING_DIRECTORY ${WORKINGDIR}
 	DEPENDS  ${MAIN_TEX})
@@ -53,9 +69,3 @@ ENDIF()
 
 ADD_CUSTOM_TARGET(all-formats ALL) # Entry point of execution.
 ADD_DEPENDENCIES(all-formats latex-pdf)
-
-# Remove files after compilation.
-# MESSAGE(STATUS "HERE")
-# SET(FINAL_PDF_FILE "${MAIN_TEX_BASE_FILENAME}.pdf")
-# FILE(COPY "${OUT_DIRECTORY}/${FINAL_PDF_FILE}" DESTINATION "${CMAKE_SOURCE_DIR}")
-# FILE(REMOVE_RECURSE "${OUT_DIRECTORY}")

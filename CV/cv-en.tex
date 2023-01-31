@@ -2,7 +2,7 @@
 
 % Specify the CV version according to format: v.YY.MM.DD-L.S
 % where <L> is language (RU, EN, etc.) and <S> is a special mark like 'demo'.
-\newcommand{\cvversion}{v.23.1.31-EN-demo}
+\newcommand{\cvversion}{v.23.1.31-EN-mixed}
 \input{preamble.tex}
 
 
@@ -17,7 +17,7 @@
   \phone{+7 963 061 20 44}
   \telegram{temikfart}
   \github{temikfart}
-  \printinfo{\faLinkedin}{LinkedIn}[https://linkedin.com/in/artyom-fartygin-61890024a]
+  \printinfo{\faLinkedin}{Artyom Fartygin}[https://linkedin.com/in/artyom-fartygin-61890024a]
   \location{Russia, Dolgoprudny}
 }
 
@@ -35,10 +35,17 @@
 
 \cvsection{Experience}
 
+\cvjob{Laboratory Assistant \cvtag{Java}}{Institute for System Programming of the RAS}{October 2022 -- present}{Svace}{https://www.ispras.ru/en/technologies/svace/}
+\begin{itemize}
+	\item Developed \textbf{2} insecure code detectors for Samsung's main static analyzer -- \textbf{Svace}. Developments are included in the latest release.
+\end{itemize}
+
+\divider
+
 \cvjob{Assistant Engineer \cvtag{C++}}{\huawei Huawei -- System Engineering Lab}{Summer Internship 2022}{Huawei RRI}{https://career.huawei.ru/rri/en/}
 
 \begin{itemize}
-	\item Developed \textbf{3} detectors of inefficient code (\textbf{Static Analysis}). Two of them analyze \textbf{LLVM IR} and look for idioms (\textbf{Idiom Detection}). All the programs are used in the company.
+	\item Developed \textbf{3} inefficient code detectors (\textbf{Static Analysis}). Two of them analyze \textbf{LLVM IR} and look for idioms (\textbf{Idiom Detection}). All the programs are used in the company.
 \end{itemize}
 
 \divider
@@ -50,16 +57,19 @@
 \end{itemize}
 
 
+\medskip
+
 
 \cvsection{Projects}
 
-\cvproject{SQL to CypherQL Converter \cvtag{C++}}{Open-Source project -- Data Migration Tool}{February -- May 2022}{sql2cypher}{https://github.com/temikfart/sql2cypher/}
+\cvproject{SQL to CypherQL Converter \cvtag{C++}}{Open-Source project -- Data Migration Tool}{February 2022 -- present}{sql2cypher}{https://github.com/temikfart/sql2cypher/}
 
 \begin{itemize}
 	\item Microsoft SQL (relation DBMS) queries translation into CypherQL language (graph DBMS neo4j);
 	\item Development according to Agile (Scrum) in the team of two;
 	\item Technology stack: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
-	\item Implemented configuration and logging systems for the application, queries syntax analyzer (building AST), also, query translator.
+	\item Implemented configuration and logging systems for the application, queries syntax analyzer (building AST), also, query translator;
+	\item The tool already allows you to translate simple schemes, and work on it continues.
 \end{itemize}
 
 \divider
@@ -72,7 +82,8 @@
 \end{itemize}
 
 
-
+%%%%% Temporarily commented out
+\iffalse
 \cvsection{Certificates and diplomas}
 
 \cvachievement{\faGraduationCap}{Participations in two international olympiads on astronomy}{IOAA and IAO}
@@ -82,6 +93,8 @@
 \cvachievement{\faMedal}{Successful course completion \cvtag{Agile}}{Coursera -- <<Agile with Atlassian Jira>>}
 
 \cvachievement{\faMedal}{Successful course completion \cvtag{Java}}{JetBrains Academy -- <<Java for beginners>>}
+\fi
+%%%%%
 
 
 
@@ -91,20 +104,22 @@
 
 \cvsection{Education}
 
-\cvevent{\faUniversity University Degree}{MIPT, Bachelor}{September, 2020 -- July, 2024}{}
+\cvevent{\faUniversity University Degree}{MIPT, Bachelor}{September 2020 -- July 2024}{}
 $3^\text{rd}$ year student at phystech-school of applied mathematics and informatics
 
+\iffalse
 \divider
 
-\cvevent{\faSchool \hspace{.1ex} Secondary Eduation}{LORD lyceum}{September, 2009 -- June, 2020}{}
+\cvevent{\faSchool \hspace{.1ex} Secondary Eduation}{LORD lyceum}{September 2009 -- June 2020}{}
 Graduated with honors
+\fi
 
 
 
 \cvsection{Skills}
 
 \begin{itemize}
-	\item \textcolor{emphasis}{Main development languages} 
+	\item \textcolor{emphasis}{Development languages} 
 \end{itemize}
 
 \cvtag{C++} -- \textbf{LLVM}, \textbf{STL}, \textbf{Standard} library, etc.
@@ -119,7 +134,13 @@ Graduated with honors
 \cvtag{Ruby} -- basic knowledge and creation of simple Web applications via \cvtag{Ruby on Rails}
 %\vspace{1ex}
 
-\cvtag{Java}\cvtag{Kotlin}\cvtag{Go} -- basic knowledge
+\cvtag{Java} -- \textbf{Standard} library
+\vspace{1ex}
+
+\cvtag{Shell} -- simple scripts
+\vspace{1ex}
+
+\cvtag{Kotlin}\cvtag{Go} -- basic knowledge
 \vspace{.5ex}
 
 \divider
@@ -137,7 +158,7 @@ Graduated with honors
 \cvtag{CypherQL} -- \cvtag{neo4j} (graph DBMS)
 \vspace{1ex}
 
-\cvtag{CMake}\cvtag{Make} -- cross-platform compilation of files in \textbf{C} and \textbf{C++} languages
+\cvtag{CMake}\cvtag{Make} -- cross-platform compilation of \textbf{C}, \textbf{C++} and \textbf{LaTex} projects
 \vspace{1ex}
 
 \cvtag{GoogleTest} -- unit-testing (\textbf{C++})

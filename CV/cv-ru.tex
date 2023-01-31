@@ -2,7 +2,7 @@
 
 % Specify the CV version according to format: v.YY.MM.DD-L.S
 % where <L> is language (RU, EN, etc.) and <S> is a special mark like 'demo'.
-\newcommand{\cvversion}{v.23.1.31-RU-demo}
+\newcommand{\cvversion}{v.23.1.31-RU-mixed}
 \input{preamble.tex}
 
 
@@ -17,7 +17,7 @@
   \phone{+7 963 061 20 44}
   \telegram{temikfart}
   \github{temikfart}
-  \printinfo{\faLinkedin}{LinkedIn}[https://linkedin.com/in/artyom-fartygin-61890024a]
+%  \printinfo{\faLinkedin}{Фартыгин Артём}[https://linkedin.com/in/artyom-fartygin-61890024a]
   \location{Россия, Долгопрудный}
 }
 
@@ -35,7 +35,14 @@
 
 \cvsection{Опыт Работы}
 
-\cvjob{Ассистент Инженер \cvtag{C++}}{\huawei Huawei -- System Engineering Lab}{Летняя стажировка 2022}{Huawei RRI}{https://career.huawei.ru/rri/en/}
+\cvjob{Лаборант \cvtag{Java}}{Институт Системного Программирования РАН}{Октябрь 2022 -- по н.в.}{Svace}{https://www.ispras.ru/technologies/svace/}
+\begin{itemize}
+	\item Разработал \textbf{2} детектора небезопасного кода для основого статического анализатора компании Samsung --- \textbf{Svace}. Наработки включены в последний релиз.
+\end{itemize}
+
+\divider
+
+\cvjob{Ассистент Инженер \cvtag{C++}}{\huawei Huawei -- System Engineering Lab}{Летняя стажировка 2022}{Huawei RRI}{https://career.huawei.ru/rri/ru/}
 
 \begin{itemize}
 	\item Разработал \textbf{3} детектора неэффективного кода (\textbf{Static Analysis}). Два из них анализируют \textbf{LLVM IR} для поиска идиом (\textbf{Idiom Detection}). Все программы используются в компании.
@@ -53,13 +60,14 @@
 
 \cvsection{Проекты}
 
-\cvproject{SQL to CypherQL Converter \cvtag{C++}}{Open-Source проект -- Инструмент для миграции данных}{Февраль -- Май 2022}{sql2cypher}{https://github.com/temikfart/sql2cypher/}
+\cvproject{SQL to CypherQL Converter \cvtag{C++}}{Open-Source проект -- Инструмент для миграции данных}{Февраль 2022 -- по н.в.}{sql2cypher}{https://github.com/temikfart/sql2cypher/}
 
 \begin{itemize}
 	\item Трансляция запросов Microsoft SQL (реляционная СУБД) в язык CypherQL (графовая СУБД neo4j);
 	\item Разработка по Agile (Scrum) в команде из двух человек;
 	\item Стек технологий: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
-	\item Реализовал систему конфигурации и логирования приложения, синтаксический анализ запросов (построение AST), а также переводчик запросов (Query Assembler).
+	\item Реализовал систему конфигурации и логирования приложения, синтаксический анализ запросов (построение AST), а также переводчик запросов (Query Assembler);
+	\item Инструмент уже позволяет транслировать несложные схемы, а работа над ним продолжается.
 \end{itemize}
 
 \divider
@@ -72,7 +80,8 @@
 \end{itemize}
 
 
-
+%%%%% Temporarily commented out
+\iffalse
 \cvsection{Сертификаты и Дипломы}
 
 \cvachievement{\faGraduationCap}{Участие в двух \textbf{международных} олимпиадах по астрономии}{IOAA и IAO}
@@ -82,6 +91,8 @@
 \cvachievement{\faMedal}{Успешное завершение курса \cvtag{Agile}}{Coursera -- <<Agile with Atlassian Jira>>}
 
 \cvachievement{\faMedal}{Успешное завершение курса \cvtag{Java}}{JetBrains Academy -- <<Java for beginners>>}
+\fi
+%%%%%
 
 
 
@@ -94,17 +105,12 @@
 \cvevent{\faUniversity Высшее образование}{МФТИ, Бакалавриат}{Сентябрь, 2020 -- Июль, 2024}{}
 $3^\text{ий}$ курс физтех-школы прикладной математики и информатики
 
-\divider
-
-\cvevent{\faSchool \hspace{.1ex} Среднее образование}{Лицей ЛОРД}{Сентябрь, 2009 -- Июнь, 2020}{}
-Окончил с отличием
-
 
 
 \cvsection{Навыки}
 
 \begin{itemize}
-	\item \textcolor{emphasis}{Главные языки разработки} 
+	\item \textcolor{emphasis}{Языки разработки} 
 \end{itemize}
 
 \cvtag{C++} -- \textbf{LLVM}, \textbf{STL}, \textbf{Standard} library и т.д.
@@ -119,13 +125,19 @@ $3^\text{ий}$ курс физтех-школы прикладной матем
 \cvtag{Ruby} -- базовые знания языка и создание простых web-приложений на \cvtag{Ruby on Rails}
 %\vspace{1ex}
 
-\cvtag{Java}\cvtag{Kotlin}\cvtag{Go} -- базовые знания
+\cvtag{Java} -- \textbf{Standard} library
+\vspace{1ex}
+
+\cvtag{Shell} -- простые скрипты
+\vspace{1ex}
+
+\cvtag{Kotlin}\cvtag{Go} -- базовые знания
 \vspace{.5ex}
 
 \divider
 
 \begin{itemize}
-	\item \textcolor{emphasis}{Had work experience} 
+	\item \textcolor{emphasis}{Имел опыт работы}
 \end{itemize}
 
 \cvtag{LLVM} -- написание анализирующих pass'ов для \textbf{LLVM Opt}, знание базовых \textbf{LLVM IR} инструкций
@@ -137,7 +149,7 @@ $3^\text{ий}$ курс физтех-школы прикладной матем
 \cvtag{CypherQL} -- \cvtag{neo4j} (графовая СУБД)
 \vspace{1ex}
 
-\cvtag{CMake}\cvtag{Make} -- кроссплатформенная компиляция на языках \textbf{C} и \textbf{C++}
+\cvtag{CMake}\cvtag{Make} -- кроссплатформенная компиляция \textbf{C}, \textbf{C++} и \textbf{LaTex} проектов
 \vspace{1ex}
 
 \cvtag{GoogleTest} -- Unit-тестирование (\textbf{C++})

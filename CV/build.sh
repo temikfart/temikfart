@@ -2,13 +2,15 @@
 
 # Options:
 filename="<filename>"
+lang="<en|ru>=en"
 bibflag="<0|1>=0"
 
 # Usage
 usage() {
-    printf "Usage: $0 %s [%s]\n" $filename $bibflag
+    printf "Usage: $0 %s [%s] [%s]\n" $filename $lang $bibflag
     printf "where\n"
     printf "%15s  filename of main Tex file without extension.\n" $filename
+    printf "%15s  choose language for words wrap support.\n" $lang
     printf "%15s  disable or enable bibliography compilation.\n" $bibflag
     exit 1;
 }
@@ -25,6 +27,12 @@ if [[ ! -f "$1.tex" ]] ; then
     exit 1;
 fi
 
+# Check, that language is supported.
+if [[ $2 != "" && $2 != "ru" && $2 != "en" ]] ; then
+    echo "ERROR: Language '$2' is unsupported."
+    exit 1;
+fi
+
 ### Compilation ###
 # 1. Remove old build directory.
 rm -rf build
@@ -33,7 +41,8 @@ rm -rf build
 INTFILES_DIR="intfiles"
 cmake -S . -B build \
     -DMAIN_TEX_BASE_FILENAME="$1" \
-    -DWITH_BIBLIOGRAPHY=$2 \
+    -DRUSSIAN_SUPPORT="$2" \
+    -DWITH_BIBLIOGRAPHY=$3 \
     -DLATEX_OUTPUT_PATH=$INTFILES_DIR
 
 # 3. Make the project.
