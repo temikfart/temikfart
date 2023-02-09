@@ -14,13 +14,13 @@ Currently developing several [projects](#-projects) and working in
 over a static analyzer
 [Svace](https://www.ispras.ru/en/technologies/svace/) by Samsung.
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="right" src="https://github-readme-stats.vercel.app/api?username=temikfart&hide=contribs&hide_title=false&show_icons=true&include_all_commits=true&count_private=true&custom_title=GitHub%20Stats"/>
-</a>
+
 
 ### My CV is [here](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf).
 
-
+<a href="https://github.com/anuraghazra/github-readme-stats">
+    <img align="right" src="https://github-readme-stats.vercel.app/api?username=temikfart&hide=contribs&hide_title=false&show_icons=true&include_all_commits=true&count_private=true&custom_title=GitHub%20Stats"/>
+</a>
 
 ### Contact me on social media
 ---
