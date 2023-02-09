@@ -14,34 +14,27 @@ Currently developing several [projects](#-projects) and working in
 over a static analyzer
 [Svace](https://www.ispras.ru/en/technologies/svace/) by Samsung.
 
-### My CV [here](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf).
+### My CV is [here](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf).
 
 
 
 ### Contact me on social media
 ---
 
-<a href="https://linkedin.com/in/artyom-fartygin-61890024a">
+<a href="https://linkedin.com/in/artyom-fartygin-61890024a" style="font-size:20px">
     <img src="images/linkedin.png" alt="LinkedIn" width="20"/>
-    <span style="font-size:20px">
-        LinkedIn
-    </span>
+    LinkedIn
 </a>
-<span style="font-size:25px"> | </span>
-<a href="https://t.me/temikfart">
+|
+<a href="https://t.me/temikfart" style="font-size:20px">
     <img src="images/telegram.png" alt="LinkedIn" width="20"/>
-    <span style="font-size:20px">
-        Telegram
-    </span>
+    Telegram
 </a>
-<span style="font-size:25px"> | </span>
-<a href="mailto:xadintak1@mail.ru">
+|
+<a href="mailto:xadintak1@mail.ru" style="font-size:20px">
     <img src="images/email.png" alt="LinkedIn" width="20"/>
-    <span style="font-size:20px">
-        Email
-    </span>
+    Email
 </a>
-</span>
 
 
 
@@ -80,15 +73,7 @@ is an emulator of outdated 16-bit computer
 ---
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=temikfart
-&hide=Common Lisp
-&hide_title=false
-&layout=compact
-&card_width=300
-&langs_count=6
-&exclude_repo=GIS-Excelsior
-&custom_title=Most used languages on GitHub
-&disable_animations=false"/>
+    <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=temikfart&hide=Common Lisp&layout=compact&langs_count=6&exclude_repo=GIS-Excelsior&custom_title=Most used languages on GitHub"/>
 </a>
 
 * **Languages:** C/C++, Java, Kotlin and a little bit Python, Ruby, Go
@@ -105,17 +90,5 @@ See more in my [CV](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-e
 ---
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="center" src="https://github-readme-stats.vercel.app/api?username=temikfart
-&hide=contribs
-&hide_title=true
-&card_width=500px
-&hide_rank=false
-&show_icons=true
-&include_all_commits=true
-&count_private=true
-&line_height=25
-&exclude_repo=[]
-&custom_title=title
-&text_bold=true
-&disable_animations=false"/>
+    <img align="center" src="https://github-readme-stats.vercel.app/api?username=temikfart&hide=contribs&hide_title=true&show_icons=true&include_all_commits=true&count_private=true"/>
 </a>
