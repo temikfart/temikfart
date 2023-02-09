@@ -73,7 +73,7 @@ is an emulator of outdated 16-bit computer
 ---
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=temikfart&hide=Common Lisp&layout=compact&langs_count=6&exclude_repo=GIS-Excelsior&custom_title=Most used languages on GitHub"/>
+    <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=temikfart&hide=Common%20Lisp&layout=compact&langs_count=6&exclude_repo=GIS-Excelsior&custom_title=Most%20used%20languages%20on%20GitHub"/>
 </a>
 
 * **Languages:** C/C++, Java, Kotlin and a little bit Python, Ruby, Go
