@@ -21,18 +21,18 @@ over a static analyzer
 ### Contact me on social media
 ---
 
-<a href="https://linkedin.com/in/artyom-fartygin-61890024a" style="font-size:20px">
-    <img src="images/linkedin.png" alt="LinkedIn" width="20"/>
+<a href="https://linkedin.com/in/artyom-fartygin-61890024a">
+    <img src="images/linkedin.png" alt="LinkedIn" width="15"/>
     LinkedIn
 </a>
 |
-<a href="https://t.me/temikfart" style="font-size:20px">
-    <img src="images/telegram.png" alt="LinkedIn" width="20"/>
+<a href="https://t.me/temikfart">
+    <img src="images/telegram.png" alt="LinkedIn" width="15"/>
     Telegram
 </a>
 |
-<a href="mailto:xadintak1@mail.ru" style="font-size:20px">
-    <img src="images/email.png" alt="LinkedIn" width="20"/>
+<a href="mailto:xadintak1@mail.ru">
+    <img src="images/email.png" alt="LinkedIn" width="15"/>
     Email
 </a>
 
