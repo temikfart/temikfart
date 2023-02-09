@@ -37,6 +37,10 @@ over a static analyzer
 </a>
 
 
+&NewLine;
+<details>
+<summary>More stuff about me</summary>
+
 
 ### What I'm currently learning
 ---
@@ -84,6 +88,8 @@ is an emulator of outdated 16-bit computer
 
 See more in my [CV](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf).
 
+
+</details>
 
 
 ### GitHub Stats
