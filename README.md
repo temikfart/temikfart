@@ -22,17 +22,17 @@ over a static analyzer
 ---
 
 <a href="https://linkedin.com/in/artyom-fartygin-61890024a">
-    <img src="images/linkedin.png" alt="LinkedIn" width="15"/>
+    <img src="CV/images/linkedin.png" alt="LinkedIn" width="15"/>
     LinkedIn
 </a>
 |
 <a href="https://t.me/temikfart">
-    <img src="images/telegram.png" alt="LinkedIn" width="15"/>
+    <img src="CV/images/telegram.png" alt="LinkedIn" width="15"/>
     Telegram
 </a>
 |
 <a href="mailto:xadintak1@mail.ru">
-    <img src="images/email.png" alt="LinkedIn" width="15"/>
+    <img src="CV/images/email.png" alt="LinkedIn" width="15"/>
     Email
 </a>
 
