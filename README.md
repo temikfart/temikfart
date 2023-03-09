@@ -6,11 +6,11 @@ I have been programming for almost two years and I try something new all the tim
 Managed to gain experience in system programming in
 [Huawei](https://career.huawei.ru/rri/en/)
 and [ISP RAS](https://www.ispras.ru/).
-I also want to start learning Web Backend development by starting to write the Swallow project
-([details](#projects) bellow) in Kotlin.
+Also I started to learn web backend development by starting to write 
+a studoko web-application (details bellow) in Kotlin.
 
-Currently developing several [projects](#-projects) and working in
-[ISP RAS](https://www.ispras.ru/)
+Currently developing several [projects](#projects) and working in
+[ISP RAS](https://www.ispras.ru/en/)
 over a static analyzer
 [Svace](https://www.ispras.ru/en/technologies/svace/) by Samsung.
 
@@ -50,8 +50,8 @@ over a static analyzer
 ---
 
 Now, I learn [Kotlin](https://kotlinlang.org/)
-and its application in Web Backend Development. I plan to write a project
-that is related to Cloud Technologies. I hope, it will be very interested.
+and its application in web backend Development.
+I hope, it will be very interesting.
 
 
 
@@ -67,9 +67,9 @@ is a very lightweight, flexible, simple and universal logger for C++ projects.
 It supports different formats (in e.g. json), colors, can write logs
 in some places (files, stdout) and so on.
 
-* **[Kotlin]** [Swallow]()
-is the Web-application, which allows you to deploy your own cloud service
-with familiar functionality. 
+* **[Kotlin]** studoko
+is a web application that will allow the Department of APT at the MIPT
+to issue and accept homework for students, control access to a server cluster.
 
 * **[C]** [PDP-11 Emulator](https://github.com/temikfart/pdp11-emulator)
 is an emulator of outdated 16-bit computer
