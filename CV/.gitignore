@@ -7,4 +7,5 @@
 *.out
 *.*.xml
 *.synctex.gz
+build
 
