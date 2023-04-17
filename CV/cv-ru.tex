@@ -2,7 +2,7 @@
 
 % Specify the CV version according to format: v.YY.MM.DD-L.S
 % where <L> is language (RU, EN, etc.) and <S> is a special mark like 'demo'.
-\newcommand{\cvversion}{v.23.1.31-RU-mixed}
+\newcommand{\cvversion}{v.23.4.17-RU-mixed}
 \input{preamble.tex}
 
 
@@ -12,7 +12,6 @@
 \tagline{Software Engineer}
 
 \personalinfo{%
-  % Not all of these are required!
   \email{fartygin.a@phystech.edu}
   \phone{+7 963 061 20 44}
   \telegram{temikfart}
@@ -37,7 +36,7 @@
 
 \cvjob{Лаборант \cvtag{Java}}{Институт Системного Программирования РАН}{Октябрь 2022 -- по н.в.}{Svace}{https://www.ispras.ru/technologies/svace/}
 \begin{itemize}
-	\item Разработал \textbf{2} детектора небезопасного кода для основого статического анализатора компании Samsung --- \textbf{Svace}. Наработки включены в последний релиз.
+	\item Разработал \textbf{6} детекторов небезопасного кода для основого статического анализатора компании Samsung --- \textbf{Svace}. Наработки включены в release-3.3.2.
 \end{itemize}
 
 \divider
@@ -60,16 +59,28 @@
 
 \cvsection{Проекты}
 
+\cvproject{СтудОко \cvtag{Kotlin}}{Web-приложение для кафедры АТП МФТИ}{Март 2023 -- по н.в.}{}{}
+
+\begin{itemize}
+	\item Проект на стадии разработки MVP;
+	\item Позволит преподавателям регистрировать курсы и выкладывать домашние задания, а студентам --- подписываться на курсы и получать необходимые доступы на \textbf{GitLab} и \textbf{кластер серверов МФТИ};
+	\item Технологии: Kotlin, web-фреймворк Ktor, PostgresQL + ORM Exposed, Docker, Gradle.
+\end{itemize}
+
+\divider
+
 \cvproject{SQL to CypherQL Converter \cvtag{C++}}{Open-Source проект -- Инструмент для миграции данных}{Февраль 2022 -- по н.в.}{sql2cypher}{https://github.com/temikfart/sql2cypher/}
 
 \begin{itemize}
 	\item Трансляция запросов Microsoft SQL (реляционная СУБД) в язык CypherQL (графовая СУБД neo4j);
 	\item Разработка по Agile (Scrum) в команде из двух человек;
-	\item Стек технологий: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
+	\item Технологии: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
 	\item Реализовал систему конфигурации и логирования приложения, синтаксический анализ запросов (построение AST), а также переводчик запросов (Query Assembler);
 	\item Инструмент уже позволяет транслировать несложные схемы, а работа над ним продолжается.
 \end{itemize}
 
+%%%%% Temporarily commented out
+\iffalse
 \divider
 
 \cvproject{Эмулятор PDP-11 \cvtag{C}}{Курсовая работа в МФТИ}{Апрель -- Июль 2021}{pdp11-emulator}{https://github.com/temikfart/pdp11-emulator/}
@@ -78,6 +89,8 @@
 	\item Работа была сделана в соотстветсвии с техническим заданием;
 	\item Был разработан обширная функциональность: множество команд для исполнения, слова состояния процессора и т.д.
 \end{itemize}
+\fi
+%%%%%
 
 
 %%%%% Temporarily commented out
@@ -110,13 +123,19 @@ $3^\text{ий}$ курс физтех-школы прикладной матем
 \cvsection{Навыки}
 
 \begin{itemize}
-	\item \textcolor{emphasis}{Языки разработки} 
+	\item \textcolor{emphasis}{Языки разработки}
 \end{itemize}
 
 \cvtag{C++} -- \textbf{LLVM}, \textbf{STL}, \textbf{Standard} library и т.д.
 \vspace{1ex}
 
-\cvtag{C} -- \textbf{Standard} и \textbf{POSIX} libraries.
+\cvtag{C} -- \textbf{Standard}, \textbf{POSIX} и \textbf{MPI} libraries.
+\vspace{1ex}
+
+\cvtag{Kotlin} -- web-приложения на \cvtag{Ktor}
+\vspace{1ex}
+
+\cvtag{Java} -- \textbf{Standard} library
 \vspace{1ex}
 
 \cvtag{Python} -- авто Web UI-тесты с помощью WebDriver (PyTest, unittest)
@@ -125,13 +144,7 @@ $3^\text{ий}$ курс физтех-школы прикладной матем
 \cvtag{Ruby} -- базовые знания языка и создание простых web-приложений на \cvtag{Ruby on Rails}
 %\vspace{1ex}
 
-\cvtag{Java} -- \textbf{Standard} library
-\vspace{1ex}
-
-\cvtag{Shell} -- простые скрипты
-\vspace{1ex}
-
-\cvtag{Kotlin}\cvtag{Go} -- базовые знания
+\cvtag{Shell}\cvtag{Go} -- базовые знания
 \vspace{.5ex}
 
 \divider
@@ -143,16 +156,19 @@ $3^\text{ий}$ курс физтех-школы прикладной матем
 \cvtag{LLVM} -- написание анализирующих pass'ов для \textbf{LLVM Opt}, знание базовых \textbf{LLVM IR} инструкций
 \vspace{1ex}
 
-\cvtag{SQL} -- \cvtag{Microsoft SQLS} (реляционная СУБД)
+\cvtag{SQL} -- \cvtag{Microsoft SQLS}\cvtag{PostgresQL}
 \vspace{-.2ex}
 
-\cvtag{CypherQL} -- \cvtag{neo4j} (графовая СУБД)
+\cvtag{CypherQL} -- \cvtag{Neo4j} (графовая СУБД)
+\vspace{1ex}
+
+\cvtag{Gradle} -- сборка проектов с добавлением собственных задач (gradle tasks)
 \vspace{1ex}
 
 \cvtag{CMake}\cvtag{Make} -- кроссплатформенная компиляция \textbf{C}, \textbf{C++} и \textbf{LaTex} проектов
 \vspace{1ex}
 
-\cvtag{GoogleTest} -- Unit-тестирование (\textbf{C++})
+\cvtag{GoogleTest} -- unit-тестирование (\textbf{C++})
 \vspace{1ex}
 
 \cvtag{Doxygen} -- документирование кода
@@ -167,7 +183,7 @@ $3^\text{ий}$ курс физтех-школы прикладной матем
 	\item\textcolor{emphasis}{Рабочие инструменты}
 \end{itemize}
 
-\cvtag{GitHub}\cvtag{GitLab}\cvtag{Jira}\cvtag{Agile}
+\cvtag{GitHub}\cvtag{GitLab}\cvtag{Jira}\cvtag{Agile}\cvtag{Postman}\cvtag{pgAdmin4}
 
 
 

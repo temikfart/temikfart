@@ -2,7 +2,7 @@
 
 % Specify the CV version according to format: v.YY.MM.DD-L.S
 % where <L> is language (RU, EN, etc.) and <S> is a special mark like 'demo'.
-\newcommand{\cvversion}{v.23.1.31-EN-mixed}
+\newcommand{\cvversion}{v.23.4.17-EN-mixed}
 \input{preamble.tex}
 
 
@@ -12,7 +12,6 @@
 \tagline{Software Engineer}
 
 \personalinfo{%
-  % Not all of these are required!
   \email{fartygin.a@phystech.edu}
   \phone{+7 963 061 20 44}
   \telegram{temikfart}
@@ -37,7 +36,7 @@
 
 \cvjob{Laboratory Assistant \cvtag{Java}}{Institute for System Programming of the RAS}{October 2022 -- present}{Svace}{https://www.ispras.ru/en/technologies/svace/}
 \begin{itemize}
-	\item Developed \textbf{2} insecure code detectors for Samsung's main static analyzer -- \textbf{Svace}. Developments are included in the latest release.
+	\item Developed \textbf{6} insecure code detectors for Samsung's main static analyzer -- \textbf{Svace}. Developments are included in the release-3.3.2.
 \end{itemize}
 
 \divider
@@ -62,16 +61,28 @@
 
 \cvsection{Projects}
 
+\cvproject{StudOko \cvtag{Kotlin}}{Web-application for the ATP department at MIPT}{March 2023 -- present}{}{}
+
+\begin{itemize}
+	\item Project under development MVP;
+	\item Will allow teachers to register courses and post homework assignments, and students --- to subscribe to courses and get the necessary access to \textbf{GitLab} and \textbf{MIPT server cluster};
+	\item Technologies: Kotlin, Ktor web-framework, PostgresQL + ORM Exposed, Docker, Gradle.
+\end{itemize}
+
+\divider
+
 \cvproject{SQL to CypherQL Converter \cvtag{C++}}{Open-Source project -- Data Migration Tool}{February 2022 -- present}{sql2cypher}{https://github.com/temikfart/sql2cypher/}
 
 \begin{itemize}
 	\item Microsoft SQL (relation DBMS) queries translation into CypherQL language (graph DBMS neo4j);
 	\item Development according to Agile (Scrum) in the team of two;
-	\item Technology stack: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
+	\item Technologies: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
 	\item Implemented configuration and logging systems for the application, queries syntax analyzer (building AST), also, query translator;
 	\item The tool already allows you to translate simple schemes, and work on it continues.
 \end{itemize}
 
+%%%%% Temporarily commented out
+\iffalse
 \divider
 
 \cvproject{PDP-11 Emulator \cvtag{C}}{Coursework at MIPT}{April -- July 2021}{pdp11-emulator}{https://github.com/temikfart/pdp11-emulator/}
@@ -80,6 +91,8 @@
 	\item Coursework was done according to professor's specifications;
 	\item Developed an extensive functionality: a lot of commands, processor state word, etc.
 \end{itemize}
+\fi
+%%%%%
 
 
 %%%%% Temporarily commented out
@@ -119,13 +132,19 @@ Graduated with honors
 \cvsection{Skills}
 
 \begin{itemize}
-	\item \textcolor{emphasis}{Development languages} 
+	\item \textcolor{emphasis}{Development languages}
 \end{itemize}
 
 \cvtag{C++} -- \textbf{LLVM}, \textbf{STL}, \textbf{Standard} library, etc.
 \vspace{1ex}
 
-\cvtag{C} -- \textbf{Standard} and \textbf{POSIX} libraries.
+\cvtag{C} -- \textbf{Standard}, \textbf{POSIX} and \textbf{MPI} libraries.
+\vspace{1ex}
+
+\cvtag{Kotlin} -- web-applications with \cvtag{Ktor}
+\vspace{1ex}
+
+\cvtag{Java} -- \textbf{Standard} library
 \vspace{1ex}
 
 \cvtag{Python} -- automated Web UI-testing via Selenium WebDriver (PyTest, unittest)
@@ -134,13 +153,7 @@ Graduated with honors
 \cvtag{Ruby} -- basic knowledge and creation of simple Web applications via \cvtag{Ruby on Rails}
 %\vspace{1ex}
 
-\cvtag{Java} -- \textbf{Standard} library
-\vspace{1ex}
-
-\cvtag{Shell} -- simple scripts
-\vspace{1ex}
-
-\cvtag{Kotlin}\cvtag{Go} -- basic knowledge
+\cvtag{Shell}\cvtag{Go} -- basic knowledge
 \vspace{.5ex}
 
 \divider
@@ -152,10 +165,13 @@ Graduated with honors
 \cvtag{LLVM} -- writing analysis passes for \textbf{LLVM Opt}, comprehention of most \textbf{LLVM IR} instructions
 \vspace{1ex}
 
-\cvtag{SQL} -- \cvtag{Microsoft SQLS} (relational DBMS)
+\cvtag{SQL} -- \cvtag{Microsoft SQLS}\cvtag{PostgresQL}
 \vspace{-.2ex}
 
-\cvtag{CypherQL} -- \cvtag{neo4j} (graph DBMS)
+\cvtag{CypherQL} -- \cvtag{Neo4j} (graph DBMS)
+\vspace{1ex}
+
+\cvtag{Gradle} -- building projects with adding your own tasks (gradle tasks)
 \vspace{1ex}
 
 \cvtag{CMake}\cvtag{Make} -- cross-platform compilation of \textbf{C}, \textbf{C++} and \textbf{LaTex} projects
@@ -176,7 +192,7 @@ Graduated with honors
 	\item\textcolor{emphasis}{Tools and approaches}
 \end{itemize}
 
-\cvtag{GitHub}\cvtag{GitLab}\cvtag{Jira}\cvtag{Agile}
+\cvtag{GitHub}\cvtag{GitLab}\cvtag{Jira}\cvtag{Agile}\cvtag{Postman}\cvtag{pgAdmin4}
 
 
 
