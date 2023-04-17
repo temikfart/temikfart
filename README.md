@@ -7,7 +7,7 @@ Managed to gain experience in system programming in
 [Huawei](https://career.huawei.ru/rri/en/)
 and [ISP RAS](https://www.ispras.ru/).
 Also I started to learn web backend development by starting to write 
-a studoko web-application (details bellow) in Kotlin.
+a StudOko web-application (details bellow) in Kotlin.
 
 Currently developing several [projects](#projects) and working in
 [ISP RAS](https://www.ispras.ru/en/)
@@ -67,9 +67,10 @@ is a very lightweight, flexible, simple and universal logger for C++ projects.
 It supports different formats (in e.g. json), colors, can write logs
 in some places (files, stdout) and so on.
 
-* **[Kotlin]** studoko
-is a web application that will allow the Department of APT at the MIPT
-to issue and accept homework for students, control access to a server cluster.
+* **[Kotlin]** [studoko](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf)
+is a web application that will allow the Department of ATP at the MIPT
+to issue and accept homework for students, control access to a server cluster
+and department's GitLab.
 
 * **[C]** [PDP-11 Emulator](https://github.com/temikfart/pdp11-emulator)
 is an emulator of outdated 16-bit computer
