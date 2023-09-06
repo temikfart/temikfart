@@ -2,7 +2,7 @@
 
 % Specify the CV version according to format: v.YY.MM.DD-L.S
 % where <L> is language (RU, EN, etc.) and <S> is a special mark like 'demo'.
-\newcommand{\cvversion}{v.23.4.17-RU-mixed}
+\newcommand{\cvversion}{v.23.9.6-RU-mixed}
 \input{preamble.tex}
 
 
@@ -34,8 +34,9 @@
 
 \cvsection{Опыт Работы}
 
-\cvjob{Лаборант \cvtag{Java}}{Институт Системного Программирования РАН}{Октябрь 2022 -- по н.в.}{Svace}{https://www.ispras.ru/technologies/svace/}
+\cvjob{Лаборант \cvtag{Java}}{Институт Системного Программирования РАН -- Отдел компиляторных технологий}{Октябрь 2022 -- по н.в.}{Svace}{https://www.ispras.ru/technologies/svace/}
 \begin{itemize}
+	\item Разрабатываю систему защиты дистрибутива нашего продукта с использованием физических ключей;
 	\item Разработал \textbf{6} детекторов небезопасного кода для основого статического анализатора компании Samsung --- \textbf{Svace}. Наработки включены в release-3.3.2.
 \end{itemize}
 
@@ -64,7 +65,7 @@
 \begin{itemize}
 	\item Проект на стадии разработки MVP;
 	\item Позволит преподавателям регистрировать курсы и выкладывать домашние задания, а студентам --- подписываться на курсы и получать необходимые доступы на \textbf{GitLab} и \textbf{кластер серверов МФТИ};
-	\item Технологии: Kotlin, web-фреймворк Ktor, PostgresQL + ORM Exposed, Docker, Gradle.
+	\item Технологии: Kotlin, Ktor, PostgresQL, Docker, Gradle.
 \end{itemize}
 
 \divider
@@ -73,10 +74,9 @@
 
 \begin{itemize}
 	\item Трансляция запросов Microsoft SQL (реляционная СУБД) в язык CypherQL (графовая СУБД neo4j);
-	\item Разработка по Agile (Scrum) в команде из двух человек;
 	\item Технологии: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
-	\item Реализовал систему конфигурации и логирования приложения, синтаксический анализ запросов (построение AST), а также переводчик запросов (Query Assembler);
-	\item Инструмент уже позволяет транслировать несложные схемы, а работа над ним продолжается.
+	\item Реализовал конфигурацию и логирование приложения, синтаксический анализ запросов, а также переводчик запросов;
+	\item Инструмент уже позволяет транслировать несложные схемы, а работа над ним продолжается в дипломной работе.
 \end{itemize}
 
 %%%%% Temporarily commented out
@@ -116,7 +116,7 @@
 \cvsection{Образование}
 
 \cvevent{\faUniversity Высшее образование}{МФТИ, Бакалавриат}{Сентябрь, 2020 -- Июль, 2024}{}
-$3^\text{ий}$ курс физтех-школы прикладной математики и информатики
+$4^\text{ый}$ курс физтех-школы прикладной математики и информатики
 
 
 
@@ -126,16 +126,16 @@ $3^\text{ий}$ курс физтех-школы прикладной матем
 	\item \textcolor{emphasis}{Языки разработки}
 \end{itemize}
 
-\cvtag{C++} -- \textbf{LLVM}, \textbf{STL}, \textbf{Standard} library и т.д.
-\vspace{1ex}
-
-\cvtag{C} -- \textbf{Standard}, \textbf{POSIX} и \textbf{MPI} libraries.
+\cvtag{Java} -- промышленная разработка
 \vspace{1ex}
 
 \cvtag{Kotlin} -- web-приложения на \cvtag{Ktor}
 \vspace{1ex}
 
-\cvtag{Java} -- \textbf{Standard} library
+\cvtag{C++} -- LLVM, STL, Standard library и т.д.
+\vspace{1ex}
+
+\cvtag{C} -- Standard, POSIX и MPI libraries.
 \vspace{1ex}
 
 \cvtag{Python} -- авто Web UI-тесты с помощью WebDriver (PyTest, unittest)
@@ -165,10 +165,10 @@ $3^\text{ий}$ курс физтех-школы прикладной матем
 \cvtag{Gradle} -- сборка проектов с добавлением собственных задач (gradle tasks)
 \vspace{1ex}
 
-\cvtag{CMake}\cvtag{Make} -- кроссплатформенная компиляция \textbf{C}, \textbf{C++} и \textbf{LaTex} проектов
+\cvtag{CMake}\cvtag{Make} -- кроссплатформенная компиляция C, C++ и LaTex проектов
 \vspace{1ex}
 
-\cvtag{GoogleTest} -- unit-тестирование (\textbf{C++})
+\cvtag{GoogleTest} -- unit-тестирование (C++)
 \vspace{1ex}
 
 \cvtag{Doxygen} -- документирование кода
