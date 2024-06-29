@@ -2,7 +2,7 @@
 
 % Specify the CV version according to format: v.YY.MM.DD-L.S
 % where <L> is language (RU, EN, etc.) and <S> is a special mark like 'demo'.
-\newcommand{\cvversion}{v.23.9.6-RU-mixed}
+\newcommand{\cvversion}{v.24.6.29-RU-mixed}
 \input{preamble.tex}
 
 
@@ -13,11 +13,11 @@
 
 \personalinfo{%
   \email{fartygin.a@phystech.edu}
-  \phone{+7 963 061 20 44}
+%  \phone{}
   \telegram{temikfart}
   \github{temikfart}
 %  \printinfo{\faLinkedin}{Фартыгин Артём}[https://linkedin.com/in/artyom-fartygin-61890024a]
-  \location{Россия, Долгопрудный}
+  \location{Россия, Москва}
 }
 
 \makecvheader
@@ -34,9 +34,11 @@
 
 \cvsection{Опыт Работы}
 
-\cvjob{Лаборант \cvtag{Java}}{Институт Системного Программирования РАН -- Отдел компиляторных технологий}{Октябрь 2022 -- по н.в.}{Svace}{https://www.ispras.ru/technologies/svace/}
+\cvjob{Лаборант \cvtag{Java}}{\isprasru Институт Системного Программирования РАН -- Отдел компиляторных технологий}{Октябрь 2022 -- по н.в.}{Svace}{https://www.ispras.ru/technologies/svace/}
 \begin{itemize}
-	\item Разрабатываю систему защиты дистрибутива нашего продукта с использованием физических ключей;
+	\item Разработал систему защиты дистрибутива нашего продукта с использованием физических ключей, что \href{https://svace.pages.ispras.ru/svace-website/2024/05/16/release-3-4-240516.html}{\textcolor{url}{в разы ускорило анализ больших проектов}} (release-3.4.240516);
+	\item Написал подробную статью на Хабр
+	\href{https://habr.com/ru/companies/isp_ras/articles/788618/}{\textcolor{url}{про загрузку классов в Java 8 и Java 9+}};
 	\item Разработал \textbf{6} детекторов небезопасного кода для основого статического анализатора компании Samsung --- \textbf{Svace}. Наработки включены в release-3.3.2.
 \end{itemize}
 
@@ -48,49 +50,29 @@
 	\item Разработал \textbf{3} детектора неэффективного кода (\textbf{Static Analysis}). Два из них анализируют \textbf{LLVM IR} для поиска идиом (\textbf{Idiom Detection}). Все программы используются в компании.
 \end{itemize}
 
-\divider
-
-\cvjob{Backend Разработчик \cvtag{Ruby on Rails}}{ООО <<ТелеПроводник>>}{3 месяца}{ТелеПроводник}{https://teleprovodnik.ru/}
-
-\begin{itemize}
-	\item Модернизировал геопортал, который начал разрабатываться \textbf{10} лет назад (устаревший). Я обновил версию языка и фреймворка до современных, восстановил работу API сервисов.
-\end{itemize}
-
 
 
 \cvsection{Проекты}
 
-\cvproject{СтудОко \cvtag{Kotlin}}{Web-приложение для кафедры АТП МФТИ}{Март 2023 -- по н.в.}{}{}
+\cvproject{СтудОко \cvtag{Kotlin}}{Web-приложение для кафедры АТП МФТИ}{Февраль 2024 -- по н.в.}{}{}
 
 \begin{itemize}
+	\item \textbf{Руковожу командой} из 4-х студентов ФПМИ МФТИ по Scrum;
 	\item Проект на стадии разработки MVP;
 	\item Позволит преподавателям регистрировать курсы и выкладывать домашние задания, а студентам --- подписываться на курсы и получать необходимые доступы на \textbf{GitLab} и \textbf{кластер серверов МФТИ};
-	\item Технологии: Kotlin, Ktor, PostgresQL, Docker, Gradle.
+	\item Технологии: Ktor, React.js, PostgresQL, Docker, Gradle.
 \end{itemize}
 
 \divider
 
-\cvproject{SQL to CypherQL Converter \cvtag{C++}}{Open-Source проект -- Инструмент для миграции данных}{Февраль 2022 -- по н.в.}{sql2cypher}{https://github.com/temikfart/sql2cypher/}
+\cvproject{SQL to Cypher Converter \cvtag{C++}}{Open-Source проект -- Инструмент для трансляции запросов при миграции из RDBMS в GDBMS}{Февраль 2022 -- по н.в.}{sql2cypher}{https://github.com/temikfart/sql2cypher/}
 
 \begin{itemize}
-	\item Трансляция запросов Microsoft SQL (реляционная СУБД) в язык CypherQL (графовая СУБД neo4j);
-	\item Технологии: git-flow, GoogleTest, Doxygen, CI, graphviz, CMake;
-	\item Реализовал конфигурацию и логирование приложения, синтаксический анализ запросов, а также переводчик запросов;
-	\item Инструмент уже позволяет транслировать несложные схемы, а работа над ним продолжается в дипломной работе.
+	\item Трансляция запросов на языке SQL (Microsoft SQL Server) в язык Cypher (Neo4j);
+	\item Инструмент уже позволяет транслировать несложные DDL и DML запросы;
+	\item Реализована архитектура для расширения транслируемой грамматики;
+	\item Технологии: C++, CMake, GoogleTest, GitHub Actions, graphviz.
 \end{itemize}
-
-%%%%% Temporarily commented out
-\iffalse
-\divider
-
-\cvproject{Эмулятор PDP-11 \cvtag{C}}{Курсовая работа в МФТИ}{Апрель -- Июль 2021}{pdp11-emulator}{https://github.com/temikfart/pdp11-emulator/}
-
-\begin{itemize}
-	\item Работа была сделана в соотстветсвии с техническим заданием;
-	\item Был разработан обширная функциональность: множество команд для исполнения, слова состояния процессора и т.д.
-\end{itemize}
-\fi
-%%%%%
 
 
 %%%%% Temporarily commented out
@@ -98,12 +80,6 @@
 \cvsection{Сертификаты и Дипломы}
 
 \cvachievement{\faGraduationCap}{Участие в двух \textbf{международных} олимпиадах по астрономии}{IOAA и IAO}
-
-\cvachievement{\faMedal}{Успешное завершение курса \cvtag{C++}}{Coursera -- <<Основы разработки на C++: Жёлтый пояс>>}
-
-\cvachievement{\faMedal}{Успешное завершение курса \cvtag{Agile}}{Coursera -- <<Agile with Atlassian Jira>>}
-
-\cvachievement{\faMedal}{Успешное завершение курса \cvtag{Java}}{JetBrains Academy -- <<Java for beginners>>}
 \fi
 %%%%%
 
@@ -115,82 +91,46 @@
 
 \cvsection{Образование}
 
-\cvevent{\faUniversity Высшее образование}{МФТИ, Бакалавриат}{Сентябрь, 2020 -- Июль, 2024}{}
-$4^\text{ый}$ курс физтех-школы прикладной математики и информатики
+\cvevent{\faUniversity Высшее образование}{\mipt МФТИ, Бакалавриат}{Сентябрь, 2020 -- Июль, 2024}{}
+Выпускник физтех-школы прикладной математики и информатики.
 
 
 
 \cvsection{Навыки}
 
+\textcolor{emphasis}{Языки разработки}
+\vspace{2ex}
+
 \begin{itemize}
-	\item \textcolor{emphasis}{Языки разработки}
+	\item \cvtag{Java} -- промышленная разработка
+	\item \cvtag{Kotlin} -- web-приложения на \cvtag{Ktor}
+	\item \cvtag{C++} -- standard library и немного LLVM
+	\item \cvtag{C} -- standard, POSIX и MPI libraries.
+	\item \cvtag{Groovy} -- Gradle скрипты сборки проектов с добавлением собственных задач (gradle tasks) и плагинов, а также написание Jenkins Pipeline'ов.
+	\vspace{1ex}
+	\item \cvtag{Python} -- скрипты и авто Web UI-тесты с помощью WebDriver (PyTest, unittest)
 \end{itemize}
-
-\cvtag{Java} -- промышленная разработка
-\vspace{1ex}
-
-\cvtag{Kotlin} -- web-приложения на \cvtag{Ktor}
-\vspace{1ex}
-
-\cvtag{C++} -- LLVM, STL, Standard library и т.д.
-\vspace{1ex}
-
-\cvtag{C} -- Standard, POSIX и MPI libraries.
-\vspace{1ex}
-
-\cvtag{Python} -- авто Web UI-тесты с помощью WebDriver (PyTest, unittest)
-\vspace{1ex}
-
-\cvtag{Ruby} -- базовые знания языка и создание простых web-приложений на \cvtag{Ruby on Rails}
-%\vspace{1ex}
-
-\cvtag{Shell}\cvtag{Go} -- базовые знания
-\vspace{.5ex}
 
 \divider
 
-\begin{itemize}
-	\item \textcolor{emphasis}{Имел опыт работы}
-\end{itemize}
-
-\cvtag{LLVM} -- написание анализирующих pass'ов для \textbf{LLVM Opt}, знание базовых \textbf{LLVM IR} инструкций
-\vspace{1ex}
-
-\cvtag{SQL} -- \cvtag{Microsoft SQLS}\cvtag{PostgresQL}
-\vspace{-.2ex}
-
-\cvtag{CypherQL} -- \cvtag{Neo4j} (графовая СУБД)
-\vspace{1ex}
-
-\cvtag{Gradle} -- сборка проектов с добавлением собственных задач (gradle tasks)
-\vspace{1ex}
-
-\cvtag{CMake}\cvtag{Make} -- кроссплатформенная компиляция C, C++ и LaTex проектов
-\vspace{1ex}
-
-\cvtag{GoogleTest} -- unit-тестирование (C++)
-\vspace{1ex}
-
-\cvtag{Doxygen} -- документирование кода
-\vspace{1ex}
-
-\cvtag{PDP-11 Assembly}\cvtag{Bash}\cvtag{MD}\cvtag{LaTex}
-\vspace{1ex}
-
-\divider
+\textcolor{emphasis}{Имел опыт работы}
+\vspace{2ex}
 
 \begin{itemize}
-	\item\textcolor{emphasis}{Рабочие инструменты}
+	\item \cvtag{JVM} -- работа с байткодом с помощью ASM, системой модулей и загрузкой классов
+	\item \cvtag{SQL} -- \cvtag{Microsoft SQLS}\cvtag{PostgresQL}
+	\item \cvtag{Cypher} -- \cvtag{Neo4j} (графовая СУБД)
+	\item \cvtag{CMake}\cvtag{Make} -- кроссплатформенная компиляция C, C++ и LaTex проектов
+	\item \cvtag{LLVM} -- написание анализирующих pass'ов для \textbf{LLVM Opt}, знание базовых \textbf{LLVM IR} инструкций
+	\item \cvtag{Ruby} -- базовые знания языка и создание простых web-приложений на \cvtag{Ruby on Rails}
 \end{itemize}
-
-\cvtag{GitHub}\cvtag{GitLab}\cvtag{Jira}\cvtag{Agile}\cvtag{Postman}\cvtag{pgAdmin4}
 
 
 
 \cvsection{Языки}
 
 \begin{itemize}
-	\item Английский --- \cvtag{Pre-Intermediate}
+	\item Английский --- \cvtag{Intermediate}
 \end{itemize}
 
 \end{paracol}

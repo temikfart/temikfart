@@ -57,4 +57,3 @@ cp "$INTFILES_DIR/$1.pdf" "$RESULT_DIR/$1.pdf"
 
 # 5. Remove build directories
 rm -rf build && rm -rf $INTFILES_DIR
-
