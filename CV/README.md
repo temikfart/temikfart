@@ -132,6 +132,7 @@ You can find the original template and more information at the [AltaCV GitHub re
 
 Feel free to use and modify this CV template for your own purposes.
 However, please give credit to the original template creator, LianTze Lim, if you distribute or share your modified version.
+Do it under the conditions of the [LaTeX Project Public License](http://www.latex-project.org/lppl.txt).
 
 ## Contact Me
 
