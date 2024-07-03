@@ -105,6 +105,10 @@ Simply replace the my personal data with your own information.
 
 - Added new "Telegram" field to tagline;
 - Removed photo;
+- Added new command `\cvversion`, which are automatically adds watermark with version of your CV.
+  To hide the version just comment `draftwatermark` package in the `preamble.tex` file,
+  where you also can change the place of the watermark.
+  I usually write version as `v.YYYY.MM.DD-<language>-<type>`.
 - Added new command `\cvjob` like `\cvevent` (but with colored link to the company) to show your work experience. Example:
 
   ```tex
