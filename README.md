@@ -1,13 +1,12 @@
 ## Hi, I'm Artyom
 ---
 
-I am an undergraduate student at [MIPT](https://mipt.ru/english/).
-I have been programming for almost two years and I try something new all the time.
+I am a first-year student at [MIPT](https://mipt.ru/english/).
+I have been programming for three years and I try something new all the time.
 Managed to gain experience in system programming in
-[Huawei](https://career.huawei.ru/rri/en/)
-and [ISP RAS](https://www.ispras.ru/).
-Also I started to learn web backend development by starting to write 
-a StudOko web-application (details bellow) in Kotlin.
+[Huawei](https://career.huawei.ru/rri/en/) and [ISP RAS](https://www.ispras.ru/).
+I am also learning Web Backend Development while leading a team,
+which is developing StudOko Web application in Kotlin for ATP department at MIPT.
 
 Currently developing several [projects](#projects) and working in
 [ISP RAS](https://www.ispras.ru/en/)
@@ -49,9 +48,8 @@ over a static analyzer
 ### What I'm currently learning
 ---
 
-Now, I learn [Kotlin](https://kotlinlang.org/)
-and its application in web backend Development.
-I hope, it will be very interesting.
+Now, I study Data Flow Analysis (DFA) at work 
+and [the Rust language](https://www.rust-lang.org/) in my free time.
 
 
 
@@ -59,22 +57,18 @@ I hope, it will be very interesting.
 ---
 
 * **[C++]** [sql2cypher](https://github.com/temikfart/sql2cypher)
-is a **unique** tool, which allow you to translate your Microsoft SQL queries
-for **relational database to** queries for neo4j (**graph** DBMS).
+is a **unique** tool, which allows you to translate your queries
+when migrating from RDBMS (Microsoft SQL Server) into GDBMS (Neo4j).
 
 * **[C++]** [logger](https://github.com/temikfart/logger)
 is a very lightweight, flexible, simple and universal logger for C++ projects.
 It supports different formats (in e.g. json), colors, can write logs
 in some places (files, stdout) and so on.
 
-* **[Kotlin]** [studoko](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf)
+* **[Kotlin]** [StudOko](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf)
 is a web application that will allow the Department of ATP at the MIPT
 to issue and accept homework for students, control access to a server cluster
 and department's GitLab.
-
-* **[C]** [PDP-11 Emulator](https://github.com/temikfart/pdp11-emulator)
-is an emulator of outdated 16-bit computer
-[PDP-11](https://en.wikipedia.org/wiki/PDP-11).
 
 
 
@@ -85,11 +79,10 @@ is an emulator of outdated 16-bit computer
     <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=temikfart&hide=Common%20Lisp,Jupyter%20Notebook,TeX&layout=compact&langs_count=6&exclude_repo=GIS-Excelsior&custom_title=Most%20used%20languages%20on%20GitHub"/>
 </a>
 
-* **Languages:** C/C++, Java, Kotlin and a little bit Python, Ruby, Go
-* **DBMS:** Microsoft SQLS, neo4j
+* **Languages:** Java, C/C++, Kotlin and a little bit Python, Ruby, Go
+* **DBMS:** Microsoft SQL Server, Neo4j
 * **DevOps:** Linux, Git and a little bit Docker, CI/CD
 * **Agile:** Scrum & Kanban in [Jira](https://www.atlassian.com/ru/software/jira)
-* **Other:** Shell, Doxygen, GTest, LaTex
 
 See more in my [CV](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf).
 
