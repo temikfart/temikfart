@@ -6,7 +6,7 @@ I have been programming for three years and I try something new all the time.
 Managed to gain experience in system programming in
 [Huawei](https://career.huawei.ru/rri/en/) and [ISP RAS](https://www.ispras.ru/).
 I am also learning Web Backend Development while leading a team,
-which is developing StudOko Web application in Kotlin for ATP department at MIPT.
+which is developing [StudOko Web application](https://studoko.atp-fivt.org) in Kotlin/Java for ATP department at MIPT.
 
 Currently developing several [projects](#projects) and working in
 [ISP RAS](https://www.ispras.ru/en/)
@@ -65,7 +65,7 @@ is a very lightweight, flexible, simple and universal logger for C++ projects.
 It supports different formats (in e.g. json), colors, can write logs
 in some places (files, stdout) and so on.
 
-* **[Kotlin]** [StudOko](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf)
+* **[Kotlin]** [StudOko](https://studoko.atp-fivt.org)
 is a web application that will allow the Department of ATP at the MIPT
 to issue and accept homework for students, control access to a server cluster
 and department's GitLab.
@@ -79,9 +79,9 @@ and department's GitLab.
     <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=temikfart&hide=Common%20Lisp,Jupyter%20Notebook,TeX&layout=compact&langs_count=6&exclude_repo=GIS-Excelsior&custom_title=Most%20used%20languages%20on%20GitHub"/>
 </a>
 
-* **Languages:** Java, C/C++, Kotlin and a little bit Python, Ruby, Go
-* **DBMS:** Microsoft SQL Server, Neo4j
-* **DevOps:** Linux, Git and a little bit Docker, CI/CD
+* **Languages:** Java, C/C++, Kotlin and a little bit Rust, Python
+* **DBMS:** PostgreSQL, Microsoft SQL Server, Neo4j
+* **DevOps:** Docker, CI/CD on GitHub and GitLab, Jenkins
 * **Agile:** Scrum & Kanban in [Jira](https://www.atlassian.com/ru/software/jira)
 
 See more in my [CV](https://github.com/temikfart/temikfart/blob/main/CV/pdf/cv-en.pdf).
