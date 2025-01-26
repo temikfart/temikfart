@@ -1,7 +1,7 @@
 ## Hi, I'm Artyom
 ---
 
-I am a first-year student at [MIPT](https://mipt.ru/english/).
+I am a MSc student at [MIPT](https://mipt.ru/english/).
 I have been programming for three years and I try something new all the time.
 Managed to gain experience in system programming in
 [Huawei](https://career.huawei.ru/rri/en/) and [ISP RAS](https://www.ispras.ru/).
